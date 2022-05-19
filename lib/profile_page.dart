@@ -166,7 +166,7 @@ class _ProfilePageState extends State<ProfilePage> {
                           height: 170,
                           child: ListView.builder(
                               scrollDirection: Axis.horizontal,
-                              itemCount: 5,
+                              itemCount: user.publicRepos,
                               itemBuilder: (context, index) {
                                 return _popularRepos(repo[index], index);
                               }),
